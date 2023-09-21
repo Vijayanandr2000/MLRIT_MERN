@@ -1,0 +1,72 @@
+<!-- 
+    1. html
+    2. Main Container
+        1. heading
+        2. Sub Container
+            1. Inputbox
+            2. button
+    
+    JS
+    1. once te add button is triggered
+        1. et the value of inputbo
+        2. create a element li
+        3. append
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo APP</title>
+ </head>
+ <body>
+    <div class="container">
+        <h1>To-Do APP</h1>
+        <div class="subContainer">
+            <input type="text" id="task" placeholder="Add a new task">
+            <button id="addBtn" onclick="addTask()"> Add </button>
+        </div>
+
+        <ul id="taskList">
+
+        </ul>
+    </div>
+
+    <script>
+            const taskInp = document.getElementById("task");
+
+            const addBtn = document.getElementById("addBtn");
+
+            const taskList = document.getElementById("taskList");
+
+            function addTask(){
+                const inputVal = taskInp.value.trim();
+
+                console.log("inputVal");
+
+                if(inputVal != ""){
+                    const listItem = document.createElement("li");
+
+                    listItem.innerHTML = `
+                        <span>${inputVal}</span>
+                        <button class="del-btn">Delete</button>
+                    `
+
+                    taskList.appendChild(listItem);
+
+                    taskInp.value = ""
+                    const delBtn = document.querySelector(".del-btn");
+
+                    delBtn.addEventListener("click", function(){
+                        listItem.remove()
+                    })
+                }
+            }
+
+            // addBtn.addEventListener("click", )
+    </script>
+
+ </body>
+ </html>
