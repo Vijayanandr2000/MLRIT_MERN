@@ -1,0 +1,24 @@
+How to create a backend app?
+
+1. Download - Node js
+
+--> Create a Node app
+
+1. npm init
+2. npm install express and nodemon
+3. Create a Server
+
+
+--> Database - MongoDB
+
+1. Open MongoDB
+2. Create a Project
+3. Create a Database
+4. Create the Link for MongoDB
+5. Connect the backend app with MongoDB 
+
+
+--> Creating a Model
+
+Todo Model
+    listItem - String - Madatory

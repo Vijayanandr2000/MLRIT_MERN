@@ -1,0 +1,17 @@
+{
+  "name": "backend---todo",
+  "version": "1.0.0",
+  "description": "This is a TODO app where we can able to create, update, delete and read the data from the user request.  ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vijayanand R",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.2",
+    "nodemon": "^3.0.1"
+  }
+}
