@@ -1,7 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
-const Todo = require('./Model/todoModel');
+const todoRouter = require('./router/todo');
+
+// const Todo = require('./Model/todoModel');
 
 const app = express();
 
@@ -17,16 +19,19 @@ db.on('error', () => {
 
 db.once('open', async () => {
 
-    await Todo.create({
-        task: "Task 2"
-    })
+    // await Todo.create({
+    //     task: "Task 2"
+    // })
 
     console.log("DB is connected")
 })
 
-app.get('/', (req, res) => {
-    res.send("Hello, world!");
-})
+// app.get('/', (req, res) => {
+//     res.send("Hello, world!");
+// })
+app.use(express.json());
+
+app.use('/', todoRouter)
 
 app.listen(PORT, () => {
     console.log("Server is started")

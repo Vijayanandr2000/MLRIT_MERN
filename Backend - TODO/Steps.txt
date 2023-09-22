@@ -22,3 +22,16 @@ How to create a backend app?
 
 Todo Model
     listItem - String - Madatory
+
+
+--> CRUD Operation - TODO app
+1. create a task  - C
+2. read a task    - R
+3. Update a task  - U
+4. Delete a task  - D
+
+--> routing Methods in express
+1. POST
+2. GET
+3. PUT
+4. DELETE
