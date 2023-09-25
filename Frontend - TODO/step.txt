@@ -1,0 +1,43 @@
+1. React js
+
+Why to use React js instead of HTML CSS and JS
+- Virutal DOM
+- Components Based System
+
+How to create a React APP
+- npx create-react-app app_name(smallcase)
+
+How to start a React app
+- npm start => default port is 3000
+
+Rules for JSX
+- Need to wrap in sinle parent tag
+- every tag need to be colsed
+- Create a file always in PascalCase
+
+How React created VDOM
+- ReactDOM.createRoot(document.getElementById('root'))
+
+JSX 
+- Javascript + XML(HTML)
+- extension for reactapp
+
+Create a Component based system for better performance
+
+Hooks in React
+1. UseState
+    - one var and one callback function 
+    var will store te data wic stored by callback function
+
+Delete Algo based on Idx in arr
+
+let a = [1,2,3,4,5] // delete 3rd num
+
+i. find Idx
+ii. Remove tat idx alone
+
+for(let i = 0; i < a.length; i++){
+    if(i != delIdx){
+        
+    }
+}
